@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/frame15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/frame15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Phòng khách"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doAm" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp"
+        android:background="@drawable/frame15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/frame15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image12" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/frame15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/graph9" />
+
+        <ImageButton
+            android:layout_width="76dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/frame15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lighting_icon" />
+
+        <ImageButton
+            android:layout_width="85dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="300dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/frame15"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clock_alarm" />
+    </com.google.android.material.navigation.NavigationView>
+
+    <Button
+        android:id="@+id/doAm"
+        android:layout_width="203dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/frame15"
+
+        android:gravity="center"
+        android:text="Biểu đồ độ ẩm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <Button
+        android:id="@+id/nhietDo"
+        android:layout_width="203dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/frame15"
+        android:gravity="center"
+
+        android:text="Biểu đồ nhiệt độ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <Button
+        android:id="@+id/thongke"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/frame15"
+        android:gravity="center"
+        android:text="Thống kê"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_chart" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
